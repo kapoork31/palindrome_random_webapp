@@ -1,0 +1,46 @@
+This package has both a flask api and a basic webapp to access the api from
+
+Approach
+ - I did research what I wanted to do beforehand and read up on javascript so 
+  when I started I could actally get as much done in the 3 horus as possible.
+  If I started as soon as I opened the email I would not have got much done as the webapp was something which slowed me down.
+
+ - I did put a plan together of what I wanted to do and in what order.
+ - created my pipenv with my fixed libraries for my local development and testing
+ - started writing tests for the utils functions like palindrome and the gen_random_string function
+ - then wrote tests for the api endpoint using pytest and the client object to allow for easy flask testing
+ - then wrote the flask function and tested locally
+ 
+ - then wrote the html file with the inline javascript to hit the endpoint
+ - this step took me quite a while and definitely pushed me above the 3 hours as I just wanted it to work for my own sanity.
+
+ - Created a dockerfile for the api and the webapp separately
+ - very quick step thankfully
+ - tried and failed to put them in the one container so went for the quicker option.
+
+ To run the tests and code locally
+ - from the root run pipenv install -r requirements.txt
+ - run pipenv shell to activate the pipenv
+ - from the root run python -m tests.unit_tests and python -m tests.integrations_tests
+ - to run the flask server locally run python -m src.app from the root
+ - to run the webapp just double click the index.html file in file explorer and open in google chrome
+ - run python -m locally_test_api.py from the root to test the endpoint out from python
+
+To run the docker containers from the root
+ - docker build -f Dockerfile.api -t my-api .
+ - docker run -it -p 5000:5000 my-api
+
+ - docker build -f Dockerfile.web -t my-apache2 .
+ - docker run -it -p 8080:80 --name my-running-app my-apache2
+ - navigate to http://localhost:8080/ to use.
+
+Read the deployment_options.pdf for my throughts on deployment
+ If I had more time I would made it much more detailed and clearer how you would actually do these deployments.
+ I was not sure how much detail was wanted, ie, linux commands or detailed step by step implementations of vpc connections from public to private subnets etc.
+
+If I had more time.
+  - better commenting on my code
+  - linter for my code so no unused vars/imports etc
+  - better deployment documentation
+  - single docker file
+  - no inline javascript.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <input type="text" id="message" name="message"><br>
+  <input type="submit" value="Submit" onclick="fetchData()">
+
+</body>
+</html>
+
+<script>
+function fetchData() {
+  var message = document.getElementById("message").value;
+
+  fetch('http://localhost:5000/random_gen_endpoint',{
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({'message':message})
+    })
+    .then(function (response) {
+      if (response.status !== 200) {
+        console.log(
+          'Looks like there was a problem. Status Code: ' + response.status
+        );
+        return;
+      }
+      response.json().then(function (data) {
+        console.log(data)
+        alert(data["message"]);
+      });
+    })
+    .catch(function (err) {
+      console.log(err);
+    });
+}
+
+
+
+
+</script>
+

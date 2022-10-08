@@ -1,0 +1,25 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:05:40] "OPTIONS /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:05:40] "POST /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:12:11] "OPTIONS /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:12:11] "POST /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.100:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:16:44] "OPTIONS /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:16:44] "POST /random_gen_endpoint HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:45] "[37mOPTIONS /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:45] "[37mPOST /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:47] "[37mOPTIONS /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:47] "[37mPOST /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:53] "[37mOPTIONS /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:53] "[37mPOST /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:59] "[37mOPTIONS /random_gen_endpoint HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Oct/2022 21:53:59] "[37mPOST /random_gen_endpoint HTTP/1.1[0m" 200 -
