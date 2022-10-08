@@ -21,8 +21,8 @@ Approach
  To run the tests and code locally
  - from the root run pipenv install -r requirements.txt
  - run pipenv shell to activate the pipenv
- - from the root run python -m tests.unit_tests and python -m tests.integrations_tests
  - to run the flask server locally run python -m src.app from the root
+ - from the root run python -m tests.unit_tests and python -m tests.integrations_tests, server must be running before testing
  - to run the webapp just double click the index.html file in file explorer and open in google chrome
  - run python -m locally_test_api.py from the root to test the endpoint out from python
 
